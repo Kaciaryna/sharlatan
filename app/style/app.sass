@@ -9,7 +9,6 @@ div.container_12
   background: url(../img/12_col.gif)
 
 header
-  overflow: hidden
   padding: 10px 0
 
 .main_menu
@@ -18,21 +17,17 @@ header
   border-radius: 4px
   font-family: "Helvetica Neue" Helvetica Arial "Lucida Grande" sans-serif
   font-size: 17px
-  overflow: hidden
   li
-    float: left
-    line-height: 34px
-  a
     background: url(../img/breadcrumb_separator.png) no-repeat 100% 50%
-    display: block
-    line-height: 34px
-    padding: 0 13px 0 10px
+    float: left
+    padding: 6px 13px 6px 10px
+  a
     text-decoration: none
     &:visited
       color: inherit
 
-.current_page
-  padding: 0 13px 0 10px
+li.current_page
+  background: none
 
 section
   h2
@@ -44,10 +39,7 @@ section
   text-align: justify
   text-indent: 20px
 
-.astrology,
-.homeopathy,
-.hiv,
-.gmo
+.category
   height: 250px
   margin-bottom: 20px
   opacity: 0.6
