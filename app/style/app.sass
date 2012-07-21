@@ -5,8 +5,15 @@ body
   background: rgba(237,237,237,0.3)
   width: 100%
 
-div.container_12
-  background: url(../img/12_col.gif)
+.container
+  margin: 0 auto
+  width: 1000px
+  h2
+    color: #333
+    font-family: Arial
+    font-size: 26px
+    margin-top: 10px
+    text-align: center
 
 header
   padding: 10px 0
@@ -15,8 +22,10 @@ header
   background: rgba(237,237,237,0.3)
   border: 1px solid #ddd
   border-radius: 4px
+  display: inline-block
   font-family: "Helvetica Neue" Helvetica Arial "Lucida Grande" sans-serif
   font-size: 17px
+  width: 1000px
   li
     background: url(../img/breadcrumb_separator.png) no-repeat 100% 50%
     float: left
@@ -29,10 +38,6 @@ header
 li.current_page
   background: none
 
-section
-  h2
-    text-align: center
-
 .general_desc
   margin-bottom: 10px
   padding: 10px
@@ -40,26 +45,36 @@ section
   text-indent: 20px
 
 .category
+  border: 1px solid
+  -webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 3px
+  -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px
+  box-shadow: rgba(0,0,0,0.3) 0 1px 3px
+  border-color: #E5E5E5 #DBDBDB #D2D2D2
+  border-radius: 4px
   display: block
-  height: 250px
-  margin-bottom: 20px
-  opacity: 0.6
+  float: left
+  height: 280px
+  margin: 0 10px 20px 10px
+  padding: 15px 160px 0 20px
   text-decoration: none
-  width: 300px
-  &:hover
-    opacity: 1
-  p
+  width: 298px
+  h3
+    color: #333
+    font-size: 16px
     font-weight: bold
-    padding: 20px
+    margin-bottom: 10px
+  p
+    color: #333
+    text-align: justify
 
 .astrology
-  background: url(../img/astrology.jpg) no-repeat
+  background: #fcfcfc url(../img/astrology.jpg) 95% 70% no-repeat
 
 .homeopathy
-  background: url(../img/homeopathy.jpg) no-repeat
+  background: #fcfcfc url(../img/homeopathy.jpg) 95% 70% no-repeat
 
 .hiv
-  background: url(../img/hiv.jpg) no-repeat
+  background: #fcfcfc url(../img/hiv.png) 95% 70% no-repeat
 
 .gmo
-  background: url(../img/gmo.jpg) no-repeat
+  background: #fcfcfc url(../img/gmo.jpg) 95% 70% no-repeat
