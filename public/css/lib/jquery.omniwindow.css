@@ -1,0 +1,25 @@
+/* Default class for an overlay */
+.ow-overlay {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #424242;
+  opacity: 0.8;
+}
+
+/* Default class for hidden windows */
+.ow-closed {
+  display: none;
+}
+
+/* User-defined style */
+.modal {
+  height: 300px;
+  left: 50%;
+  position: fixed;
+  width: 300px;
+  background: #000;
+}
