@@ -1,0 +1,11 @@
+.menu_container
+  %header.container
+    %ul.main_menu
+      %li
+        %a{:href => '/'}  Шарлатан
+
+      - last_elem = @menu.length - 1
+      - @menu.each.with_index do |link, i|
+        %li{:class => (i == last_elem ? 'current_page' : '')}
+          %a{:href => link[:url]}
+            =link[:name]

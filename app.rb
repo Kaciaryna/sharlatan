@@ -1,11 +1,16 @@
+# encoding: utf-8
 require 'sinatra/base'
 
 class App < Sinatra::Base
+  set :haml, :format => :html5
+
   get '/' do
-    haml :index, :format => :html5
+    @menu = []
+    haml :index
   end
 
   get '/astrology/?' do
-    haml :"astrology/index", :format => :html5
+    @menu = [{:url => '/astrology', :name => 'Астрология'}]
+    haml :"astrology/index"
   end
 end
