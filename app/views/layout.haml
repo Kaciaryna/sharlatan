@@ -3,7 +3,10 @@
   %head
     %meta{:charset=>"utf-8"}
     %title
-      = @title
+      - if @menu.empty?
+        Шарлатан.info — научная точка зрения на окружающий мир
+      - else
+        = @menu.last[:name]
 
     %link{:type => 'text/css', :rel => "stylesheet", :href => '/css/lib/reset-min.css', :media => 'all'}
     %link{:type => 'text/css', :rel => "stylesheet", :href => '/css/app.css', :media => 'all'}
@@ -12,4 +15,5 @@
     %script{:type => 'text/javascript', :src => '/js/app.js'}
 
   %body
+    =haml :"_shared/menu"
     =yield
