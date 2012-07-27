@@ -1,0 +1,56 @@
+@charset "UTF-8";
+.questions {
+  line-height: 170%;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-size: 18px; }
+  .questions:before {
+    font-family: serif;
+    font-size: 35px;
+    content: "«"; }
+  .questions:after {
+    padding: 0;
+    margin: 0;
+    font-family: serif;
+    font-size: 20px;
+    content: "»"; }
+
+.general_desc {
+  margin-bottom: 10px;
+  padding: 10px;
+  text-indent: 20px; }
+
+.category {
+  border: 1px solid;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  border-color: #e5e5e5 #dbdbdb #d2d2d2;
+  border-radius: 4px;
+  display: block;
+  float: left;
+  height: 280px;
+  margin: 0 10px 20px 10px;
+  padding: 15px 160px 0 20px;
+  text-decoration: none;
+  width: 298px; }
+  .category h3 {
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .category p {
+    color: #333333;
+    text-align: justify; }
+
+.astrology {
+  background: #fcfcfc url(/img/astrology.jpg) 95% 70% no-repeat; }
+
+.homeopathy {
+  background: #fcfcfc url(/img/homeopathy.jpg) 95% 70% no-repeat; }
+
+.hiv {
+  background: #fcfcfc url(/img/hiv.png) 95% 70% no-repeat; }
+
+.gmo {
+  background: #fcfcfc url(/img/gmo.jpg) 95% 70% no-repeat; }

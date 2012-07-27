@@ -1,0 +1,140 @@
+@charset "UTF-8";
+body {
+  background: url(/img/texture-noise.png);
+  font: 18px sans-serif;
+  line-height: 140%; }
+
+a, a:hover, a:visited {
+  text-decoration: none;
+  border-bottom: 1px solid gray; }
+
+.menu_container {
+  background: rgba(237, 237, 237, 0.3);
+  width: 100%; }
+
+div.container {
+  overflow: hidden; }
+
+.container {
+  margin: 0 auto;
+  width: 1000px; }
+  .container h2 {
+    color: #333333;
+    font-family: Arial;
+    font-size: 26px;
+    margin: 10px 0 20px;
+    text-align: center; }
+
+header {
+  padding: 10px 0; }
+
+.main_menu {
+  background: rgba(237, 237, 237, 0.3);
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  display: inline-block;
+  font-family: "Helvetica Neue" Helvetica Arial "Lucida Grande" sans-serif;
+  font-size: 17px;
+  width: 1000px; }
+  .main_menu li {
+    background: url(/img/breadcrumb_separator.png) no-repeat 100% 50%;
+    float: left;
+    padding: 6px 13px 6px 10px; }
+  .main_menu a {
+    text-decoration: none; }
+    .main_menu a:visited {
+      color: inherit; }
+
+li.current_page {
+  background: none; }
+
+.questions {
+  line-height: 170%;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-size: 18px; }
+  .questions:before {
+    font-family: serif;
+    font-size: 35px;
+    content: "«"; }
+  .questions:after {
+    padding: 0;
+    margin: 0;
+    font-family: serif;
+    font-size: 20px;
+    content: "»"; }
+
+.general_desc {
+  margin-bottom: 10px;
+  padding: 10px;
+  text-indent: 20px; }
+
+.category {
+  border: 1px solid;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  border-color: #e5e5e5 #dbdbdb #d2d2d2;
+  border-radius: 4px;
+  display: block;
+  float: left;
+  height: 280px;
+  margin: 0 10px 20px 10px;
+  padding: 15px 160px 0 20px;
+  text-decoration: none;
+  width: 298px; }
+  .category h3 {
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .category p {
+    color: #333333;
+    text-align: justify; }
+
+.astrology {
+  background: #fcfcfc url(/img/astrology.jpg) 95% 70% no-repeat; }
+
+.homeopathy {
+  background: #fcfcfc url(/img/homeopathy.jpg) 95% 70% no-repeat; }
+
+.hiv {
+  background: #fcfcfc url(/img/hiv.png) 95% 70% no-repeat; }
+
+.gmo {
+  background: #fcfcfc url(/img/gmo.jpg) 95% 70% no-repeat; }
+
+.pro,
+.contra {
+  float: left;
+  margin-bottom: 35px;
+  padding: 10px;
+  width: 475px; }
+  .pro h3,
+  .contra h3 {
+    font-size: 20px;
+    text-align: center; }
+  .pro h3, .pro h4,
+  .contra h3,
+  .contra h4 {
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .pro p,
+  .contra p {
+    margin-bottom: 15px; }
+
+.pro {
+  margin-right: 10px; }
+
+sup {
+  vertical-align: super; }
+
+.statement {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center; }
+
+ol li {
+  list-style: decimal;
+  margin-left: 20px; }

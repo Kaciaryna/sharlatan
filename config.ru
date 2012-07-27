@@ -1,8 +1,4 @@
 require 'bundler/setup'
-
-require 'sass/plugin/rack'
-require 'rack/coffee_compiler'
-
 require "./app"
 
 
@@ -13,19 +9,18 @@ class App < Sinatra::Base
   end
 end
 
-Sass::Plugin.options.merge!(
-    :always_update     => true,
-    :always_check      => true,
-    :full_exception    => true,
-    :template_location => './app/style',
-    :css_location      => './public/css',
-    :cache_location    => './tmp/sass-cache',
-)
-use Sass::Plugin::Rack
+if ENV['RACK_ENV'] == 'development'
+  require 'sass/plugin/rack'
 
-use Rack::CoffeeCompiler,
-    :source_dir     => './app/code',
-    :url            => '/js',
-    :alert_on_error => true
+  Sass::Plugin.options.merge!(
+      :always_update     => true,
+      :always_check      => true,
+      :full_exception    => true,
+      :template_location => './app/style',
+      :css_location      => './public/css',
+      :cache_location    => './tmp/sass-cache',
+  )
+  use Sass::Plugin::Rack
+end
 
 run App

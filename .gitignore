@@ -1,8 +1,2 @@
 *.idea/
 tmp/
-
-public/css/*.css
-!public/css/lib/*
-
-public/js/*.js
-!public/js/lib/*
