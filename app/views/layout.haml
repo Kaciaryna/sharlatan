@@ -3,19 +3,12 @@
   %head
     %meta{:charset=>"utf-8"}
     %title
-      - if @menu.empty?
-        Шарлатан.info — научная точка зрения на окружающий мир
-      - else
-        = @menu.last[:name]
+      =haml :'_shared/title'
 
-    %link{:type => 'text/css', :rel => "stylesheet", :href => '/css/lib/reset-min.css', :media => 'all'}
-    %link{:type => 'text/css', :rel => "stylesheet", :href => '/css/app.css', :media => 'all'}
-    %link{:type => 'text/css', :rel => "stylesheet", :href => '/css/sasha.css', :media => 'all'}
-    %link{:type => 'text/css', :rel => "stylesheet", :href => '/css/index.css', :media => 'all'}
-    %link{:type => 'text/css', :rel => "stylesheet", :href => '/css/facts.css', :media => 'all'}
+    %link{:type => 'text/css', :rel => "stylesheet", :href => 'css/lib/reset-min.css', :media => 'all'}
+    %link{:type => 'text/css', :rel => "stylesheet", :href => 'css/app.css',   :media => 'all'}
 
-    %script{:type => 'text/javascript', :src => '/js/lib/jquery-1.7.2.min.js'}
-    %script{:type => 'text/javascript', :src => '/js/app.js'}
+    %script{:type => 'text/javascript', :src => 'js/lib/jquery-1.7.2.min.js'}
 
   %body
     =haml :"_shared/menu"
