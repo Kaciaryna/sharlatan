@@ -1,0 +1,34 @@
+.pro,
+.contra {
+  float: left;
+  margin-bottom: 35px;
+  padding: 10px;
+  width: 475px; }
+  .pro h3,
+  .contra h3 {
+    font-size: 20px;
+    text-align: center; }
+  .pro h3, .pro h4,
+  .contra h3,
+  .contra h4 {
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .pro p,
+  .contra p {
+    margin-bottom: 15px; }
+
+.pro {
+  margin-right: 10px; }
+
+sup {
+  vertical-align: super; }
+
+.statement {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center; }
+
+ol li {
+  list-style: decimal;
+  margin-left: 20px; }
