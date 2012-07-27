@@ -1,16 +1,25 @@
 # encoding: utf-8
 require 'sinatra/base'
 
+PAGES = {
+    'astrology' => 'Астрология'
+}.freeze
+
 class App < Sinatra::Base
   set :haml, :format => :html5
 
   get '/' do
-    @menu = []
+    @menu = {}
     haml :index
   end
 
-  get '/astrology/?' do
-    @menu = [{:url => '/astrology', :name => 'Астрология'}]
-    haml :"astrology/index"
+  get '/:page/?' do
+    page = params[:page]
+    name = PAGES[page]
+
+    halt 404 if page.nil? || name.nil?
+
+    @menu = {:page => page, :name => name}
+    haml :"#{page}/index"
   end
 end
