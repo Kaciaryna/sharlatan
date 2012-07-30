@@ -9,7 +9,7 @@ class App < Sinatra::Base
   end
 end
 
-if ENV['RACK_ENV'] == 'development'
+unless ENV['RACK_ENV'] == 'production'
   require 'sass/plugin/rack'
 
   Sass::Plugin.options.merge!(
