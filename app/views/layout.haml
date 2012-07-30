@@ -2,16 +2,23 @@
 %html
   %head
     %meta{:charset=>"utf-8"}
-    %title
-      =haml :'_shared/title'
+    %title Шарлатан.info — простым языком о сложных вещах
 
+    %link{:type => 'text/css', :rel => "stylesheet", :href => 'http://fonts.googleapis.com/css?family=PT+Sans:400,400italic&subset=latin,cyrillic'}
     %link{:type => 'text/css', :rel => "stylesheet", :href => 'css/lib/reset-min.css', :media => 'all'}
-    %link{:type => 'text/css', :rel => "stylesheet", :href => 'css/app.css',   :media => 'all'}
+    %link{:type => 'text/css', :rel => "stylesheet", :href => 'css/app.css', :media => 'all'}
 
     %script{:type => 'text/javascript', :src => 'js/lib/jquery-1.7.2.min.js'}
 
   %body
-    =haml :"_shared/menu"
-    =yield
+    .header
+      .logo
+        %img{:src => '/img/logo.png'}
+
+    .content
+      =yield
+
+    .footer
+
 
     %script{:type => 'text/javascript', :src => 'js/boot.js'}
