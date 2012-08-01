@@ -1,77 +1,38 @@
-/*
-Syntax error: Undefined variable: "$main_font_size".
-        on line 5 of ./app/style/index.sass
+ul.questions {
+  margin-bottom: 40px; }
+  ul.questions li {
+    font-size: 1.2em; }
 
-1: ul.questions
-2:   margin-bottom:          40px
-3: 
-4:   li
-5:     font-size:            $main_font_size
-6: 
-7: p
-8:   margin-bottom:          10px
-9: 
-10:   &:first-letter
+p {
+  margin-bottom: 10px; }
+  p:first-letter {
+    padding-left: 15px; }
 
-Backtrace:
-./app/style/index.sass:5
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/script/variable.rb:49:in `_perform'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/script/node.rb:40:in `perform'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:216:in `visit_prop'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:238:in `visit_rule'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:238:in `visit_rule'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/root_node.rb:20:in `render'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/engine.rb:300:in `_render'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/engine.rb:247:in `render'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/plugin/compiler.rb:340:in `update_stylesheet'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/plugin/compiler.rb:200:in `each'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/plugin.rb:81:in `update_stylesheets'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/plugin.rb:54:in `check_for_updates'
-/Users/mur/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/plugin/rack.rb:51:in `call'
-/Users/mur/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:147:in `handle'
-/Users/mur/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:99:in `rescue in block (2 levels) in start'
-/Users/mur/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:96:in `block (2 levels) in start'
-/Users/mur/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:86:in `each'
-/Users/mur/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:86:in `block in start'
-/Users/mur/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:66:in `loop'
-/Users/mur/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:66:in `start'
-/Users/mur/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/lib/nack/server.rb:13:in `run'
-/Users/mur/Library/Application Support/Pow/Versions/0.4.0/node_modules/nack/bin/nack_worker:4:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$main_font_size\".\A         on line 5 of ./app/style/index.sass\A \A 1: ul.questions\A 2:   margin-bottom:          40px\A 3: \A 4:   li\A 5:     font-size:            $main_font_size\A 6: \A 7: p\A 8:   margin-bottom:          10px\A 9: \A 10:   &:first-letter"; }
+.category {
+  color: #45413c;
+  border: 10px solid white;
+  display: block;
+  float: left;
+  height: 295px;
+  margin: 20px 10px 0 0;
+  padding: 10px;
+  text-decoration: none;
+  width: 450px; }
+  .category a {
+    color: #45413c;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; }
+
+.homeopathy {
+  background: url(/img/homeopathy.jpg) no-repeat; }
+
+.gmo {
+  background: url(/img/gmo.jpg) no-repeat; }
+
+.astrology {
+  background: url(/img/astrology.jpg) no-repeat; }
+
+.science {
+  background: url(/img/science.jpg) no-repeat; }

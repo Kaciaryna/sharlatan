@@ -1,7 +1,3 @@
-html, body {
-  height: 100%;
-  width: 100%; }
-
 body {
   background: url(/img/noise.png);
   color: #45413c;
@@ -27,6 +23,10 @@ body {
 p {
   line-height: 130%; }
 
+.footer {
+  clear: both;
+  height: 50px; }
+
 ul.questions {
   margin-bottom: 40px; }
   ul.questions li {
@@ -36,3 +36,32 @@ p {
   margin-bottom: 10px; }
   p:first-letter {
     padding-left: 15px; }
+
+.category {
+  color: #45413c;
+  border: 10px solid white;
+  display: block;
+  float: left;
+  height: 295px;
+  margin: 20px 10px 0 0;
+  padding: 10px;
+  text-decoration: none;
+  width: 450px; }
+  .category a {
+    color: #45413c;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; }
+
+.homeopathy {
+  background: url(/img/homeopathy.jpg) no-repeat; }
+
+.gmo {
+  background: url(/img/gmo.jpg) no-repeat; }
+
+.astrology {
+  background: url(/img/astrology.jpg) no-repeat; }
+
+.science {
+  background: url(/img/science.jpg) no-repeat; }
