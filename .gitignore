@@ -1,2 +1,5 @@
 *.idea/
 tmp/
+
+public/css/*.css
+!public/css/app.css
