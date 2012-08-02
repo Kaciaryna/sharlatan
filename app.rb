@@ -2,7 +2,8 @@
 require 'sinatra/base'
 
 PAGES = {
-    'astrology' => 'Астрология'
+    'astrology' => 'Астрология',
+    'about_science' => '&laquo;официальная наука&raquo;'
 }.freeze
 
 class App < Sinatra::Base
