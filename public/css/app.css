@@ -53,6 +53,6 @@ p {
     font-size: 1.3em;
     padding-left: 15px; }
     .category a:after {
-      content: "<"; }
+      content: ">"; }
   .category p {
     margin-top: 10px; }
