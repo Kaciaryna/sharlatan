@@ -38,6 +38,7 @@ ul li {
   list-style: disc; }
 
 sup {
+  line-height: 1em;
   vertical-align: super; }
   sup a {
     font-size: 0.9em;
@@ -59,7 +60,8 @@ sup {
   padding: 0 2px 0 2px; }
 
 p {
-  line-height: 150%; }
+  line-height: 150%;
+  margin-bottom: 25px; }
 
 .footer {
   clear: both;
@@ -70,10 +72,8 @@ ul.questions {
   ul.questions li {
     font-size: 1.2em; }
 
-p {
-  margin-bottom: 10px; }
-  p:first-letter {
-    padding-left: 15px; }
+p:first-letter {
+  padding-left: 15px; }
 
 .category {
   color: #45413c;
