@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background: url(/img/noise.png);
   color: #45413c;
@@ -13,10 +14,13 @@ h2 {
   font-size: 1.3em; }
 
 h1,
+h2 {
+  font-weight: bold; }
+
+h1,
 h2,
 h3 {
-  font-weight: bold;
-  margin-bottom: 15px; }
+  margin: 25px 0 15px 0; }
 
 h3 {
   font-size: 1.2em; }
@@ -24,10 +28,10 @@ h3 {
 ol,
 ul {
   line-height: 150%;
-  margin: 20px 0; }
+  margin: 20px 0 20px 18px; }
   ol li,
   ul li {
-    margin-bottom: 5px; }
+    margin-bottom: 25px; }
 
 ol li {
   list-style: decimal; }
@@ -38,14 +42,15 @@ ul li {
   list-style: disc; }
 
 sup {
+  font-size: 0.5em;
   line-height: 1em;
   vertical-align: super; }
   sup a {
-    font-size: 0.9em;
     text-decoration: none; }
 
 .header {
-  background-color: rgba(255, 255, 255, 0.5); }
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 5px 0 #7d7d7d; }
 
 .content, .logo {
   margin: 0 auto;
@@ -62,18 +67,23 @@ sup {
 p {
   line-height: 150%;
   margin-bottom: 25px; }
+  p:first-letter {
+    padding-left: 15px; }
 
 .footer {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 5px 0 #7d7d7d;
   clear: both;
   height: 50px; }
 
 ul.questions {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  margin-left: 0; }
   ul.questions li {
-    font-size: 1.2em; }
-
-p:first-letter {
-  padding-left: 15px; }
+    font-size: 1.2em;
+    list-style: none; }
+    ul.questions li:before {
+      content: "—"; }
 
 .category {
   color: #45413c;
