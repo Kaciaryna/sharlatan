@@ -2,13 +2,13 @@
 
 ul.questions
   margin-bottom:          40px
+  margin-left: 0
 
   li
     font-size:            $main_font_size
-
-p
-  &:first-letter
-    padding-left:         15px
+    list-style: none
+    &:before
+      content: "—"
 
 .category
   color: $main_color
