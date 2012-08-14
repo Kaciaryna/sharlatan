@@ -74,7 +74,26 @@ p {
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 5px 0 #7d7d7d;
   clear: both;
-  height: 50px; }
+  height: 100%;
+  margin-top: 20px; }
+  .footer ol,
+  .footer h2 {
+    padding-left: 23px;
+    width: 1000px; }
+  .footer ol {
+    margin: 0 auto; }
+  .footer h2 {
+    margin: 0 auto 15px;
+    padding-top: 15px; }
+
+.spoiler {
+  display: none; }
+
+.collapse {
+  display: none; }
+
+.clicked {
+  color: white; }
 
 ul.questions {
   margin-bottom: 40px;
