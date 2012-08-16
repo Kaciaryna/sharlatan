@@ -1,5 +1,6 @@
 # encoding: utf-8
 require 'sinatra/base'
+require 'sinatra/content_for'
 
 PAGES = {
     '/'             => 'простым языком о сложных вещах',
@@ -8,6 +9,8 @@ PAGES = {
 }.freeze
 
 class App < Sinatra::Base
+  helpers Sinatra::ContentFor
+
   set :haml, :format => :html5
 
   get '/' do
