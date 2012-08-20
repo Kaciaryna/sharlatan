@@ -5,6 +5,7 @@ $(function() {
   
    $("a").on( 'click', function() {
    	var id = $(this).attr("href");
+   	$(".clicked").removeClass("clicked");
    	$(id).addClass("clicked");
    })
 });
