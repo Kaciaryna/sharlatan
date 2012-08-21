@@ -48,16 +48,20 @@ sup {
   sup a {
     text-decoration: none; }
 
-.header {
+header {
   background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 5px 0 #7d7d7d; }
-
-.content, .logo {
-  margin: 0 auto;
-  width: 1000px; }
+  box-shadow: 0 0 7px 0 #7d7d7d; }
 
 .content {
-  padding: 40px; }
+  margin: 0 auto 20px; }
+  .content p {
+    clear: both; }
+
+.logo {
+  margin: 0 auto; }
+
+.content, .logo {
+  width: 1000px; }
 
 .marker {
   font-style: italic;
@@ -70,27 +74,34 @@ p {
   p:first-letter {
     padding-left: 15px; }
 
-.footer {
+footer {
   background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 5px 0 #7d7d7d;
+  box-shadow: 0 0 7px 0 #7d7d7d;
   clear: both;
   height: 100%;
-  margin-top: 20px; }
-  .footer ol,
-  .footer h2 {
+  padding: 20px 0; }
+  footer ol,
+  footer h2 {
     padding-left: 23px;
     width: 1000px; }
-  .footer ol {
+  footer ol {
     margin: 0 auto; }
-  .footer h2 {
-    margin: 0 auto 15px;
-    padding-top: 15px; }
+    footer ol li {
+      margin-bottom: 5px; }
+  footer h2 {
+    margin: 0 auto 10px; }
 
 .spoiler {
   display: none; }
 
+.details {
+  border-bottom: 1px dashed;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 0 10px 15px; }
+
 .clicked {
-  color: white; }
+  background: #aca8a0; }
 
 ul.questions {
   margin-bottom: 40px;
@@ -100,6 +111,10 @@ ul.questions {
     list-style: none; }
     ul.questions li:before {
       content: "—"; }
+
+.categories {
+  display: inline-block;
+  margin: 0; }
 
 .category {
   color: #45413c;

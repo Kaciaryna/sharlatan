@@ -50,17 +50,20 @@ sup
   a
     text-decoration: none
 
-.header
+header
   background-color:       $very_light
-  box-shadow: 0 0 5px 0 #7d7d7d
-
-
-.content, .logo
-  margin:                 0 auto
-  width:                  1000px
+  box-shadow: 0 0 7px 0 #7d7d7d
 
 .content
-  padding:                40px
+  margin: 0 auto 20px
+  p
+    clear: both
+
+.logo
+  margin:                 0 auto
+
+.content, .logo
+  width:                  1000px
 
 .marker
   font-style:             italic
@@ -73,28 +76,34 @@ p
   &:first-letter
     padding-left:         15px
 
-.footer
+footer
   background: $very_light
-  box-shadow: 0 0 5px 0 #7d7d7d
+  box-shadow: 0 0 7px 0 #7d7d7d
   clear: both
   height: 100%
-  margin-top: 20px
+  padding: 20px 0
   ol,
   h2
     padding-left: 23px
     width: 1000px
   ol
     margin: 0 auto
+    li
+      margin-bottom: 5px
   h2
-    margin: 0 auto 15px
-    padding-top: 15px
+    margin: 0 auto 10px
 
 .spoiler
   display: none
 
-.clicked
-  color: #fff
+.details
+  border-bottom: 1px dashed
+  cursor: pointer
+  display: inline-block
+  margin: 0  0 10px 15px
 
+.clicked
+  background: #aca8a0
 
 @import 'index'
 @import 'facts'
