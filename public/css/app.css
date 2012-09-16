@@ -98,10 +98,38 @@ footer {
   border-bottom: 1px dashed;
   cursor: pointer;
   display: inline-block;
-  margin: 0 0 10px 15px; }
+  margin: 0 0 20px 15px; }
 
 .clicked {
   background: #aca8a0; }
+
+.incut {
+  border: 1px solid #d7d7d7;
+  margin: 0 auto 20px;
+  padding: 10px 20px 0 20px;
+  position: relative;
+  width: 700px; }
+  .incut img {
+    display: block;
+    margin: 0 auto 10px; }
+  .incut h5 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    padding-left: 15px; }
+  .incut p {
+    font-size: 15px;
+    line-height: 1.4em; }
+  .incut span {
+    background: #fcfcfc url(/img/zoom_in.png) 5px 5px no-repeat;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    display: block;
+    height: 26px;
+    padding: 4px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 26px; }
 
 ul.questions {
   margin-bottom: 40px;
