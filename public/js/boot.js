@@ -24,9 +24,40 @@ $(function() {
     },
     modal: {
       hideClass: 'ow_closed'
+    },
+    callbacks: {
+      beforeShow: function(subjects, internalCallback) {
+        subjects.modal.find('img').attr(imageAttributes);
+        return internalCallback(subjects);
+      },
+      positioning: function(subjects) {
+        subjects.modal.css('margin-left', Math.round(imageAttributes.width / -2));
+      }
     }
   });
+
+  function compareSize($image) {
+    var minWidth = Math.min($image.attr("data-width"), screen.availWidth*0.7);
+    return {
+      "width": minWidth,
+      "src": $image.attr("src")
+    };
+  }
+
+  var $sourceImage = $(".incut img");
+  $sourceImage.each(function(i, image) {
+    var $image = $(image);
+    $("<img/>")
+      .attr("src", $image.attr("src"))
+      .load(function() {
+        $image.attr("data-width", this.width);
+        $image.attr("data-height", this.height);
+      });
+  });
+
+  var imageAttributes;
   $(".incut span").click(function() {
+    imageAttributes = compareSize($(this).prevAll("img"));
     $('div.modal').trigger('show');
   })
 });
