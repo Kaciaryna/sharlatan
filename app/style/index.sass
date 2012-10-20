@@ -33,3 +33,33 @@ ul.questions
       content: ">"
   p
     margin: 10px 0 15px 0
+
+.first_time_modal
+  background: #ffffe1
+  border-radius: 4px
+  height: 125px
+  position: absolute
+  width:  305px
+  -webkit-box-shadow: 5px -3px 6px rgba(0, 0, 0, 0.1)
+  box-shadow: 5px -3px 6px rgba(0, 0, 0, 0.1)
+  &:after
+    content: ""
+    width: 0
+    height: 0
+    border: 15px solid
+    border-color: #ffffe1 transparent transparent
+    position: absolute
+    bottom: -30px
+    left: 60px
+
+.close_btn
+  cursor: pointer
+  opacity: 0.5
+  position: absolute
+  right: 5px
+  top: 5px
+  width: 16px
+
+
+.mod_closed
+  display: none
