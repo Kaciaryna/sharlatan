@@ -17,9 +17,38 @@
 
   %body
     %header
-      .logo
-        %a{:href => "/"}
-          %img{:src => '/img/logo.png'}
+      %nav
+        .logo
+          %a{:href => "/"}
+            %img{:src => '/img/logo.png'}
+        .menu
+          %h3 Категории
+          %ul
+            %li
+              —
+              %a{:href => '/about_science'} «Официальная наука
+            %li
+              —
+              %a{:href => '/about_science'} ГМО
+            %li
+              —
+              %a{:href => '/about_science'} Гомеопатия
+            %li
+              —
+              %a{:href => '/about_science'} Очень очень очень длинное название раздела
+
+        .menu
+          %h3 О проекте
+          %ul
+            %li
+              —
+              %a{:href =>''} Контакты
+            %li
+              —
+              %a{:href =>''} Обратная связь
+            %li
+              —
+              %a{:href =>''} Помощь проекту
 
     .content
       =yield

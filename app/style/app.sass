@@ -51,18 +51,23 @@ sup
     text-decoration: none
 
 header
-  background-color:       $very_light
-  box-shadow: 0 0 7px 0 #7d7d7d
+  background-color: $very_light
+  box-shadow: 0 0 7px 0 $grey
+  height: 90px
+  position: relative
+  z-index: 1000
 
 .content
   margin: 0 auto 20px
+  position: relative
+  z-index: 100
   p
     clear: both
 
-.logo
+nav
   margin:                 0 auto
 
-.content, .logo
+.content, nav
   width:                  1000px
 
 .marker
@@ -78,7 +83,7 @@ p
 
 footer
   background: $very_light
-  box-shadow: 0 0 7px 0 #7d7d7d
+  box-shadow: 0 0 7px 0 $grey
   clear: both
   height: 100%
   padding: 20px 0
@@ -106,7 +111,7 @@ footer
   background: #aca8a0
 
 .incut
-  border: 1px solid #d7d7d7
+  border: 1px solid $grey
   margin: 0 auto 20px
   padding: 10px 20px 0 20px
   position: relative
@@ -132,6 +137,49 @@ footer
     top: 10px
     right: 20px
     width: 26px
+
+.logo
+  width: 295px
+
+.logo,
+.menu
+  float: left
+  margin-right: 50px
+
+.menu
+  padding-top: 20px
+  position: relative
+  h3
+    cursor: pointer
+    margin: 0
+    padding: 10px 10px 0
+    position: relative
+    z-index: 1000
+  ul
+    background: #e8e2dc
+    border: 1px solid #aca8a0
+    box-shadow: 4px 5px 9px -1px #85817B
+    display: none
+    left: -1px
+    margin: 0
+    padding: 10px
+    position: absolute
+    top: 59px
+    width: 300px
+    z-index: 999
+  li
+    list-style-type: none
+    margin: 0
+  a
+    color: $main_color
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  .current
+    background: #e8e2dc
+    border: 1px solid #aca8a0
+    border-bottom: none
+    margin: -1px
 
 @import 'index'
 @import 'facts'

@@ -97,10 +97,23 @@
 
   }
 
+  function showMenu() {
+    $('.menu h3').mouseenter(function() {
+      $(this).addClass('current').nextAll("ul").show();
+    });
+
+    $('.menu').mouseleave(function() {
+      var $menu = $(this);
+      $menu.find('h3').removeClass('current');
+      $menu.find('ul').hide();
+    })
+  }
+
   $(function() {
     manageSpoiler();
     highlightLink();
     expandImage();
-    showFirstVisitModal()
+    showFirstVisitModal();
+    showMenu();
   });
 })();
